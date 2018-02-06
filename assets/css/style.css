@@ -1,0 +1,203 @@
+/* Main content styles */
+body {
+    color: #777777;
+    background-image: url("../images/gplaypattern.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    /* -webkit-margin-start: 0;
+    -webkit-margin-end: 0; */
+}
+
+h1, h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-weight: bold;
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    -webkit-margin-after: 0.67em;
+    /* -webkit-margin-start: 0;
+    -webkit-margin-end: 0; */
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+hr {
+    -webkit-margin-after: 1.5em; 
+}
+
+input {
+    display: block;
+    -webkit-margin-before: .5em;
+    /* -webkit-margin-after: .5em; */
+    /* -webkit-margin-start: 0;
+    -webkit-margin-end: 0; */
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Centers all content and restricts to 960px */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Main header styles; includes name logo and navigation */
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    padding: 20px auto;
+    margin-bottom: 40px;
+}
+
+#logo {
+    float: left;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+li {
+    display: inline;
+    float: right;
+    border-left: solid 1px #cccccc;
+}
+
+li:last-child {
+    border-left: none;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    color: #777777;
+}
+
+/* Styles for the main content section */
+.main-section {
+    width: 588px;
+    padding: 30px;
+    background-color: #ffffff;
+    float: left;
+    border: solid 1px #dddddd;
+}
+
+#avatar {
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%
+}
+
+/* Styles for the sidebar */
+.sidebar {
+    width: 208px;
+    margin-left: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    float: left;
+    border: solid 1px #dddddd;
+}
+
+/* Clears floats for content container */
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Styles for Portfolio Cards */
+.card {
+    width: 48%;
+    height: 250px;
+    background-color: #777777;
+    margin-bottom: 30px;
+}
+
+.card-left {
+    position: relative;
+    float: left;
+}
+
+.card-right {
+    position: relative;
+    float: right;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.card img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    bottom: -5px;
+    width: 242px;
+    padding: 20px;
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 18px;
+    z-index: 1;
+}
+
+/* Styles for the footer */
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: solid 5px #4aaaa5;
+}
